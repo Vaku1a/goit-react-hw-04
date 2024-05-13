@@ -11,3 +11,8 @@
   grid-gap: 16px;
   padding: 64px 64px;
 }
+
+.loader {
+  display: flex;
+  align-items: center;
+}

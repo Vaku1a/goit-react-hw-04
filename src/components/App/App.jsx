@@ -76,12 +76,12 @@ export default function App() {
       <h1> What are you looking for?</h1>
       <SearchBar onSearch={handleSearch} />
       {error && <b>Oops! Please reload...</b>}
-      {isLoading && <DNA visible={true} />}
+      {isLoading && <DNA visible={true} className={css.loader} />}
       {images.length > 0 && (
         <ImageGallery items={images} onOpenModal={handleOpenModal} />
       )}
       {images.length > 0 && <button onClick={handleLoadMore}>Load more</button>}
-      {isLoading && <DNA visible={true} />}
+      {isLoading && page !== 1 && <DNA visible={true} className={css.loader} />}
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
