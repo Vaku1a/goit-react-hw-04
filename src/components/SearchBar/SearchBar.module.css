@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  gap: 4px;
+}
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 300px;
+  height: 36px;
+  padding: 4px;
+  padding-left: 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-left: 24px;
+}
+
+.searchButton {
+  position: absolute;
+  /* left: 8px; */
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: inherit;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.searchIcon {
+  font-size: 18px;
+  color: #555;
+}

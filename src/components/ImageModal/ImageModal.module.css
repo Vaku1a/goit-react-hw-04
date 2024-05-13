@@ -1,0 +1,12 @@
+.modalContainer {
+  max-width: calc(100vw - 148px);
+  max-height: calc(100vh - 124px);
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
